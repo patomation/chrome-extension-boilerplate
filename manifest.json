@@ -1,0 +1,27 @@
+{
+  "name": "Chrome Extension Boilerplate",
+  "version": "1.0",
+  "description": "A chrome extension.",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "background": {
+    "scripts": ["src/background.js"],
+    "persistent": false
+  },
+  "options_page": "src/options.html",
+  "browser_action": {
+    "default_popup": "src/popup.html",
+    "default_icon": {
+      "16": "src/images/icons/get_started16.png",
+      "32": "src/images/icons/get_started32.png",
+      "48": "src/images/icons/get_started48.png",
+      "128": "src/images/icons/get_started128.png"
+    }
+  },
+  "icons": {
+    "16": "src/images/icons/get_started16.png",
+    "32": "src/images/icons/get_started32.png",
+    "48": "src/images/icons/get_started48.png",
+    "128": "src/images/icons/get_started128.png"
+  },
+  "manifest_version": 2
+}
